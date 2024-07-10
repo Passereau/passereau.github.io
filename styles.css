@@ -1,0 +1,80 @@
+/* common ------------------------------------ */
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* tilemap ----------------------------------- */
+
+svg {
+    display: block;
+    width: 850px;
+    height: 500px;
+}
+
+.county-0 { fill: #dddddd; }
+.county-1 { fill: #8da0cb; }
+.county-2 { fill: #a6d854; }
+.county-3 { fill: #e78ac3; }
+.county-4 { fill: #e5c494; }
+.county-5 { fill: #fc8d62; }
+.county-6 { fill: #b3b3b3; }
+.county-7 { fill: #ffd92f; }
+.county-8 { fill: #66c2a5; }
+
+rect:hover {
+    opacity: .5;
+}
+
+text {
+    pointer-events: none;
+}
+
+/* popup ------------------------------------- */
+
+.popup {
+    opacity: 0;
+    pointer-events: none;
+
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-out;
+}
+
+.popup.active {
+    opacity: 1;
+}
+
+table {
+    border-spacing: none;
+    padding: 10px;
+}
+
+td {
+    padding: 0 5px;
+}
+
+td:first-of-type {
+    color: #999;
+}
+
+td:first-of-type::after {
+    content: ':';
+}
