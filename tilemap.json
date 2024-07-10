@@ -400,9 +400,9 @@
     "code": 77,
     "lon": 4,
     "lat": 3,
-    "label": "М",
+    "label": "МCR",
     "name_ru": "Москва",
-    "county_ru": "Цент"
+    "county_ru": "Центральный"
   },
   {
     "id": "MOS",
