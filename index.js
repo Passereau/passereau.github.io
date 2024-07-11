@@ -30,7 +30,7 @@
                     text.setAttributeNS(null, 'x', size / 2 - gap / 2)
                     text.setAttributeNS(null, 'y', size / 5 * 3 - gap / 2)
                     text.setAttribute('style', 'white-space: pre;');
-                    text.textContent = label + '\r\n' + '102' 
+                    text.textContent = label + '\r\n' + '103' 
 
                     const region = document.createElementNS(xmlns, 'g')
                     region.setAttributeNS(null, 'transform', `matrix(1 0 0 1 ${lon * size} ${lat * size})`)
