@@ -29,8 +29,8 @@
                     const text = document.createElementNS(xmlns, 'text')
                     text.setAttributeNS(null, 'x', size / 2 - gap / 2)
                     text.setAttributeNS(null, 'y', size / 5 * 3 - gap / 2)
-                    text.setAttributeNS('style', 'white-space: pre;');
-                    text.textContent = label + '\r\n' + '104' 
+                    text.setAttribute('style', 'white-space: pre;');
+                    text.textContent = label +  String.fromCharCode(13) + '22' 
 
                     const region = document.createElementNS(xmlns, 'g')
                     region.setAttributeNS(null, 'transform', `matrix(1 0 0 1 ${lon * size} ${lat * size})`)
