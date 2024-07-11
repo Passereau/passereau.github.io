@@ -30,7 +30,13 @@
                     text.setAttributeNS(null, 'x', size / 2 - gap / 2)
                     text.setAttributeNS(null, 'y', size / 5 * 3 - gap / 2)
                     text.setAttribute('style', 'white-space: pre;');
-                    text.textContent = label +  String.fromCharCode(13) + '22' 
+                    text.textContent = label+'1'
+
+                    const text2 = document.createElementNS(xmlns, 'text')
+                    text2.setAttributeNS(null, 'x', size / 2 - gap / 2)
+                    text2.setAttributeNS(null, 'y', size / 5 * 3 - gap / 2)
+                    text2.setAttribute('style', 'white-space: pre;');
+                    text2.textContent = '88'
 
                     const region = document.createElementNS(xmlns, 'g')
                     region.setAttributeNS(null, 'transform', `matrix(1 0 0 1 ${lon * size} ${lat * size})`)
@@ -39,6 +45,7 @@
                     region.setAttributeNS(null, 'font-size', size / 4)
                     region.appendChild(rect)
                     region.appendChild(text)
+                    region.appendChild(text2)
 
 
                     svg.appendChild(region)
