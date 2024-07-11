@@ -38,6 +38,7 @@
                     region.setAttributeNS(null, 'font-family', 'sans-serif')
                     region.setAttributeNS(null, 'font-size', size / 4)
                     region.appendChild(rect)
+                    region.setAttribute('style', 'white-space: pre;');
                     region.appendChild(text)
 
 
