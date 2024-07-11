@@ -36,7 +36,7 @@
                     text2.setAttributeNS(null, 'x', size / 2 - gap / 2)
                     text2.setAttributeNS(null, 'y', size / 5 * 3 - gap / 2 + 2)
                     text2.setAttribute('style', 'white-space: pre;');
-                    region.setAttributeNS(null, 'font-size', size / 4 * 2)
+                    text2.setAttributeNS(null, 'font-size', size / 4 * 2)
                     text2.textContent = '77'
 
                     const region = document.createElementNS(xmlns, 'g')
