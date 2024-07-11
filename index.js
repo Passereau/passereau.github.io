@@ -34,9 +34,9 @@
 
                     const text2 = document.createElementNS(xmlns, 'text')
                     text2.setAttributeNS(null, 'x', size / 2 - gap / 2)
-                    text2.setAttributeNS(null, 'y', size / 5 * 3 - gap / 2 + 20)
+                    text2.setAttributeNS(null, 'y', size / 5 * 3 - gap / 2 + 15)
                     text2.setAttribute('style', 'white-space: pre;');
-                    text2.setAttributeNS(null, 'font-size', size / (4 + 1))
+                    text2.setAttributeNS(null, 'font-size', size / (4 ))
                     text2.textContent = code
 
                     const region = document.createElementNS(xmlns, 'g')
