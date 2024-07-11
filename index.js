@@ -29,8 +29,7 @@
                     const text = document.createElementNS(xmlns, 'text')
                     text.setAttributeNS(null, 'x', size / 2 - gap / 2)
                     text.setAttributeNS(null, 'y', size / 5 * 3 - gap / 2)
-                    text.textContent = label + '\n\n' + '100' 
-                    
+                    text.textContent = label + '\r\n' + '100' 
 
                     const region = document.createElementNS(xmlns, 'g')
                     region.setAttributeNS(null, 'transform', `matrix(1 0 0 1 ${lon * size} ${lat * size})`)
